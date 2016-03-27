@@ -10,5 +10,15 @@ public interface OurList {
     void clear();
     int size();
     boolean contains(Integer i);
+    int lastIndexOf(Integer i);
     int indexOf(Integer i);
+    boolean isEmpty();
+    Integer[] toArray();
+    /*
+    Integer[] toArray();*/
+
+    // isEmpty, LastIndexsOf, toArray. HOMETASK.
+
+    // system array copy почитать, реализовать.
+
 }
