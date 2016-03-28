@@ -17,7 +17,7 @@ public interface OurList {
     /*
     Integer[] toArray();*/
 
-    // isEmpty, LastIndexsOf, toArray. HOMETASK.
+    // isEmpty, LastIndexOf, toArray. HOMETASK.
 
     // system array copy почитать, реализовать.
 

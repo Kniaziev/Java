@@ -1,14 +1,17 @@
 package Lists;
 
+import java.util.Arrays;
+
 public class OurArrayList implements OurList{
     Integer[] arr = new Integer[0];
     public void add(Integer i){ ////System.arraycopy() вставить вместо for
         Integer[] temp = new Integer[arr.length + 1]; //создается новый массив, размером больше на 1 чем оригинальный для дальнейшего добавления нового элемента
         //System.arraycopy(arr, 0, temp, 0, arr.length);
 
-        for (int j = 0; j<arr.length;j++){
-            temp[j] = arr[j];//переписывает все элементы по одному, из массива арр в новый массив*/
-        }
+        System.arraycopy(arr,0,temp,0, arr.length);
+        /*for (int j = 0; j<arr.length;j++){
+            temp[j] = arr[j];//переписывает все элементы по одному, из массива арр в новый массив*//*
+        }*/
         temp[temp.length-1]=i; //добавление в конец нового массива нового элемента
         arr = temp; // перезасетит ссылку и засеттит новый массив вместо старого
     }
@@ -93,7 +96,11 @@ public class OurArrayList implements OurList{
 
     @Override
     public boolean isEmpty() {
+        if (arr.length!=0){
         return false;
+        }
+        else{return true ;
+        }
     }
 
     @Override
