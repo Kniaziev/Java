@@ -11,8 +11,7 @@ public class NamesList {
         System.out.print("Enter your name: ");
 
         Scanner sc = new Scanner(System.in); //input
-        String s = null;
-        s = sc.nextLine(); //read string
+        String s = sc.nextLine(); //read string
 
         File f = new File("names.txt");
         //f.createNewFile();
@@ -45,7 +44,7 @@ public class NamesList {
 
 //HOMETASK
 // check input and output streams
-// сделать сериалайзбл и записывать в файл не просто имена а объекты (имя/возраст)
+// сделать сериалайзбл и записывать в файл не просто имена, а объекты (имя/возраст)
 
 //хотите ли вы ввести имя? если у - делаем. если нет, то вывести список зарегистрированных юзеров
 
